@@ -68,7 +68,6 @@ public class CatTest {
         Assert.assertTrue(cat instanceof Mammal);
     }
 
-
     @Test
     public void constructorTest() {
         // Given (cat data)
