@@ -17,6 +17,7 @@ public class CatHouseTest {
     // TODO - Create tests for `void add(Cat cat)`
     @Test
     public void testGetNumberOfCats() {
+        CatHouse.clear();
         // Given (some
         String name = "Miko";
         Date birthDate = new Date();
@@ -31,6 +32,7 @@ public class CatHouseTest {
     // TODO - Create tests for `void remove(Integer id)`
     @Test
     public void testRemoveCatsId(){
+        CatHouse.clear();
         Cat cat = new Cat();
         CatHouse.add(cat); // adding a cat
         Integer expected = 0; // argument to be compared with
@@ -42,6 +44,7 @@ public class CatHouseTest {
     // TODO - Create tests for `void remove(Cat cat)`
     @Test
     public void testRemoveCat(){
+        CatHouse.clear();
         Cat cat = new Cat(); // creating a cat object
         CatHouse.add(cat); // adding a cat
         Integer expected = 0; // argument to be compared with
@@ -52,6 +55,7 @@ public class CatHouseTest {
     // TODO - Create tests for `Cat getCatById(Integer id)`
     @Test
     public void testGetCatId() {
+        CatHouse.clear();
         Cat cat = new Cat(); // creating a cat
         CatHouse.getCatById(0); // adding a cat
         Integer expected = 0; // making sure a cat got added to the house
@@ -61,6 +65,7 @@ public class CatHouseTest {
     // TODO - Create tests for `Integer getNumberOfCats()`
     @Test
     public void testGetNumberOfCat() {
+        CatHouse.clear();
         Cat cat = new Cat(); // creating a cat
         CatHouse.add(cat); // adding a cat
         Integer expected = 1; // making sure a cat got added to the house

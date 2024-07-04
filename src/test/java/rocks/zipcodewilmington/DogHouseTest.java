@@ -15,6 +15,7 @@ public class DogHouseTest {
     // TODO - Create tests for `void add(Dog dog)`
     @Test
     public void testGetNumberOfDogs() {
+        DogHouse.clear();
         // Given (some
         String name = "Milo";
         Date birthDate = new Date();
@@ -29,6 +30,7 @@ public class DogHouseTest {
     // TODO - Create tests for `void remove(Integer id)`
     @Test
     public void testRemoveDogId(){
+        DogHouse.clear();
         Dog dog = new Dog(); // creating a dog
         DogHouse.add(dog); // adding a dog
         Integer expected = 0; // argument to be compared with
@@ -40,6 +42,7 @@ public class DogHouseTest {
     // TODO - Create tests for `void remove(Dog dog)`
     @Test
     public void testRemoveDog(){
+        DogHouse.clear();
         Dog dog = new Dog(); // creating a dog
         DogHouse.add(dog); // adding a dog
         Integer expected = 0; // argument to be compared with
@@ -50,6 +53,7 @@ public class DogHouseTest {
     // TODO - Create tests for `Dog getDogById(Integer id)`
     @Test
     public void testGetDogId() {
+        DogHouse.clear();
         Dog dog = new Dog(); // creating a dog
         DogHouse.getDogById(0); // adding a dog
         Integer expected = 0; // making sure a dog got added to the house
@@ -59,6 +63,7 @@ public class DogHouseTest {
     // TODO - Create tests for `Integer getNumberOfDogs()`
     @Test
     public void testGetNumberOfDog() {
+        DogHouse.clear();
         Dog dog = new Dog(); // creating a dog
         DogHouse.add(dog); // adding a dog
         Integer expected = 1; // making sure a dog got added to the house
